@@ -6,4 +6,5 @@ Hari ini, Rabu 07 Oktober,2025 saya mempelajari:
 <ol>
     <li>Menggunakan file emmet.html pertemuan-02 untuk file index.html pertemuan-03</li>
     <li>Membuat struktur form untuk section contact</li>
+    <li>Membuat styling untuk selector ID #about</li>
 </ol>
