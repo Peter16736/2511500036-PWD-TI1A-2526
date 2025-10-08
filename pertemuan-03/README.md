@@ -8,4 +8,6 @@ Hari ini, Rabu 07 Oktober,2025 saya mempelajari:
     <li>Membuat struktur form untuk section contact</li>
     <li>Membuat styling untuk selector ID #about</li>
     <li>Membuat styling untuk selector ID #about elemen h2</li>
+    <li>Membuat styling untuk selector ID #about elemen p</li>
+    <li>Membuat styling untuk selector ID #about elemen strong</li>
 </ol>
