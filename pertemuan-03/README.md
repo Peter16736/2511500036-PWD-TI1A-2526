@@ -22,5 +22,5 @@ Hari ini, Rabu 07 Oktober,2025 saya mempelajari:
     <li>Membuat section#contact styling tombol</li>
     <li>Membuat section#contact styling hover tombol</li>
     <li>Membuat section#contact styling label dan label>span</li>
-    <li></li>
+    <li>Membuat section#contact styling input, textarea, button</li>
 </ol>
