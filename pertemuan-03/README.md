@@ -15,4 +15,6 @@ Hari ini, Rabu 07 Oktober,2025 saya mempelajari:
     <li>Membuat section#contact groups selector</li>
     <li>Membuat section#contact groups selector h2</li>
     <li>Membuat section#contact upgrade struktur form</li>
+    <li>Membuat section#contact styling label</li>
+    <li></li>
 </ol>
