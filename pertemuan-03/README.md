@@ -18,5 +18,5 @@ Hari ini, Rabu 07 Oktober,2025 saya mempelajari:
     <li>Membuat section#contact styling label</li>
     <li>Membuat section#contact styling label>span</li>
     <li>Membuat section#contact styling input dan textarea</li>
-    
+    <li>Membuat section#contact styling tombol</li>
 </ol>
