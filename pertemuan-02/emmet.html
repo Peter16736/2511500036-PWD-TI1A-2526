@@ -4,6 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumen</title>
+<style>
+        #about {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #about h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 6px;
+            margin-top: 0;
+            margin-bottom: 16px;   
+        }
+
+        #about p {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin: 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        #about strong {
+            min-width: 180px;
+            color: #003366;
+            font-weight: 600;
+            text-align: right;
+            padding-right: 16px;
+            flex-shrink: 0;
+        }
+
+        #contact input,
+        #contact textarea {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 8px;
+            color: #000;
+            font-weight: normal;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 600px){
+            #about p {
+                flex-direction: colum;
+                align-items: flex-start;
+            }
+            #about strong {
+                text-align: left;
+                padding-right: 0;
+                margin-bottom: 2px;
+            }
+        }
+    </style>
 </head>
 
 <body>    
@@ -25,12 +85,30 @@
     </section>
 
     <section id="about">
-     <h2>&#9786; Tentang kami &#9786;</h2>
-     <p>HTML digunakan untuk membuat struktur halaman web.</p>
+      <h2>Tentang saya</h2>
+     <p><strong>NIM:</strong>2511500036</p>
+     <p><strong>Nama Lengkap:</strong>Peter Imanuel&#9786;</p>
+     <p><strong>Tempat Lahir:</strong>Pangkal Pinang</p>
+     <p><strong>Tanggal Lahir:</strong>16 Juli 2007</p>
+     <p><strong>Hobi:</strong>Basket&#9786;</p>
+     <p><strong>Pasangan&hearts;:</strong>Belum ada</p>
+     <p><strong>Pekerjaan:</strong>Tidak ada</p>
+     <p><strong>Nama Orang Tua Teman:</strong>Bapak Rokrok dan Fon</p>
+     <p><strong>Nama Kakak 1:</strong>Christine</p>
+     <p><strong>Nama Kakak 2:</strong>Sherly</p>
     </section>
     <section id="contact">
      <h2>&deg; Kontak kami &deg;</h2>
-     <p>Contoh form</p>
+      <form action="" method="GET">
+        <label for="txtNama">Nama:</label>
+        <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+        <label for="txtEmail">Email:</label>
+        <input type="Email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+        <label for="txtPesan">Pesan Anda:</label>
+        <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tuliskan pesan anda ..." required></textarea>
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+     </form>
     </section>
  </main>
 
