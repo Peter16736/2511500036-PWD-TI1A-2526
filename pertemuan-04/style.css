@@ -77,6 +77,15 @@
     background-color: #cc04a1;
     transform: translateY(1px);
   }
+  @media (max-width: 600px) {
+    header {
+        padding: 16px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+  }
  #about, 
  #contact {
             background-color: #ffffff;
