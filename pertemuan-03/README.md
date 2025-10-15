@@ -13,5 +13,6 @@ Hari ini, Rabu 07 Oktober,2025 saya mempelajari:
     <li>Membuat styling untuk selector ID #about mode responsif (mobile)</li>
     <li>Membuat styling id section#contact</li>
     <li>Membuat section#contact groups selector</li>
-
+    <li>Membuat section#contact groups selector h2</li>
+    <li></li>
 </ol>
