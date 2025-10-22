@@ -5,8 +5,8 @@ Nama:Peter Imanuel
 Hari ini, Rabu 15 Oktober,2025 saya mempelajari:
 <ol>
 <li>tombol hamburger</li>
-<li></li>
-<li></li>
+<li>class menu-toggle</li>
+<li>class menu-toggle mobile</li>
 <li></li>
 <li></li>
 <li></li>
