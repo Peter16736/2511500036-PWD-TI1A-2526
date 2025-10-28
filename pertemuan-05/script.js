@@ -102,6 +102,14 @@ windows.addEventListener("resize" , () => {
     });
 });
 
+const nav = document.querySelector("nav");
+nav.classList.toggle("active");
+if (nav.classList.contains("active")){
+    this.textContent = "\u2716"
+}   else {
+    this.textContent = "\u2630"
+}
+
 document.getElementById("txtPesan").addEventListener("input", function () {
     const panjang = this.value.length;
     document.getElementById("charCount").textContent = panjang + "/200 karakter";
