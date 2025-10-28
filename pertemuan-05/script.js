@@ -23,7 +23,7 @@ dokumen.querySelector("from").addEventListener("submit", function (e) {
     if (nama.value.trim().length < 3) {
         showError(nama, "Nama minimal 3 huruf dan tidak boleh kosong.");
         isValid = false;
-    } else if (!/^[A-Za-z\s]+$/.test(name.value)) {
+    } else if (!/^[A-Za-z\s]+$/.test(nama.value)) {
         showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
         isValid = false;
     }
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const counter = document.getElementById('charCount');
         if (!span || !textarea || !counter) return; 
 
-        if (!wrapper) {
+        if (!wrapper) { 
             wrapper = document.createElement('div');
             wrapper.dataset.wrapper = 'pesan-wrapper';
             wrapper.style.width = '100%';
