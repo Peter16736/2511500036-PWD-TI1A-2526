@@ -15,13 +15,6 @@ dokumen.querySelector("from").addEventListener("submit", function (e) {
     const email = document.getElementById("txtEmail").value.trim();
     const pesan = document.getElementById("txtPesan").value.trim();
 
-    if (nama === "" || email === "" || pesan === || "") {
-        alert("semua kolom wajib diisi!");
-        e.preventDefault();
-    }   else {
-        alert("Terima kasih, " + nama + "! Pesan anda telah dikirim.");
-    }
-
     document.querySelectorAll(".error.msg").forEach(el => el.remove());
     [nama, email, pesan].forEach(el => el.style.border = "")
 
