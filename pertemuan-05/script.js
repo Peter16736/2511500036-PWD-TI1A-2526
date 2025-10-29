@@ -122,13 +122,6 @@ if (nav.classList.contains("active")){
     this.textContent = "\u2630";
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const homeSection = document.getElementById("home");
-  const ucapan = document.createElement("p");
-  ucapan.textContent = "Halo! Selamat datang di halaman saya!";
-  homeSection.appendChild(ucapan);
-});
-
 document.getElementById("txtPesan").addEventListener("input", function () {
     const panjang = this.value.length;
     document.getElementById("charCount").textContent = panjang + "/200 karakter";
