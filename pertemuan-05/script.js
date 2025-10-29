@@ -10,7 +10,7 @@ document.getElementById("menuToggle").addEventListener("click", function () {
 
 });
 
-document.querySelector("from").addEventListener("submit", function (e) {
+document.querySelector("form").addEventListener("submit", function (e) {
     const nama = document.getElementById("txtNama").value.trim();
     const email = document.getElementById("txtEmail").value.trim();
     const pesan = document.getElementById("txtPesan").value.trim();
