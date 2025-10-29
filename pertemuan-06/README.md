@@ -6,7 +6,7 @@ Hari ini, Rabu 15 Oktober,2025 saya mempelajari:
 <ol>
 <li>hello.php</li>
 <li>index.php</li>
-<li></li>
+<li>lat1.html</li>
 <li></li>
 <li></li>
 <li></li>
