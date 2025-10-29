@@ -133,13 +133,30 @@
  <main>
     <section id="home">
      <h2>&#9787; Selamat datang &#9787;</h2>
+     <?php
+     echo "halo dunia<br>";
+     echo "Nama saya Peter";
+     ?>
      <p>Ini contoh paragraf HTML.</p>
     </section>
 
     <section id="about">
+     <?php
+        $nim = 2511500036;
+        $NIM = 2511500000;
+        $nama = 'bo\'he';
+     ?>
      <h2>Tentang saya</h2>
-     <p><strong>NIM:</strong>2511500036</p>
-     <p><strong>Nama Lengkap:</strong>Peter Imanuel&#9786;</p>
+     <p><strong>NIM:</strong>
+        <?php
+        echo $nim;
+        ?>
+    </p>
+     <p><strong>Nama Lengkap:</strong>
+     <?php
+     echo $nama;
+     ?>
+     &#9786;</p>
      <p><strong>Tempat Lahir:</strong>Pangkal Pinang</p>
      <p><strong>Tanggal Lahir:</strong>16 Juli 2007</p>
      <p><strong>Hobi:</strong>Basket&#9786;</p>
