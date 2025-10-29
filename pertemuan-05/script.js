@@ -114,14 +114,6 @@ document.getElementById("txtPesan").addEventListener("input", function () {
     document.getElementById("charCount").textContent = panjang + "/200 karakter";
 });
 
-const nav = document.querySelector("nav");
-nav.classList.toggle("active");
-if (nav.classList.contains("active")){
-    this.textContent = "\u2716";
-}   else {
-    this.textContent = "\u2630";
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     
     function setupCharCountLayout() {
