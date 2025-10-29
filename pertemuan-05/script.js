@@ -102,6 +102,18 @@ windows.addEventListener("resize" , () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+ const homeSection = document.getElementById("home");
+ const ucapan = document.createElement("p");
+ ucapan.textContent = "Halo! Selamat datang di halaman saya!";
+ homeSection.appendChild(ucapan);
+});
+
+document.getElementById("txtPesan").addEventListener("input", function () {
+    const panjang = this.value.length;
+    document.getElementById("charCount").textContent = panjang + "/200 karakter";
+});
+
 const nav = document.querySelector("nav");
 nav.classList.toggle("active");
 if (nav.classList.contains("active")){
