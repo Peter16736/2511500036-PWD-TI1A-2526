@@ -122,11 +122,6 @@ if (nav.classList.contains("active")){
     this.textContent = "\u2630";
 }
 
-document.getElementById("txtPesan").addEventListener("input", function () {
-    const panjang = this.value.length;
-    document.getElementById("charCount").textContent = panjang + "/200 karakter";
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     
     function setupCharCountLayout() {
