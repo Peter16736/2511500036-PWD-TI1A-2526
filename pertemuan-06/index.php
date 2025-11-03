@@ -218,6 +218,41 @@
         <button type="reset">Batal</button>
      </form>
     </section>
+
+    <section id="IPK">
+        <?php
+            $namaMatkul1 = "Kalkulus";
+            $namaMatkul2 = "Logika Infomatika";
+            $namaMatkul3 = "Pengantar Teknik Informatika";
+            $namaMatkul4 = "konsep Basis Data";
+            $namaMatkul5 = "Pemrograman Web Dasar";
+            $sksMatkul1 = "3";
+            $sksMatkul2 = "3";
+            $sksMatkul3 = "3";
+            $sksMatkul4 = "3";
+            $sksMatkul5 = "3";
+            $nilaiTugas1 = "";
+            $nilaiTugas2 = "";
+            $nilaiTugas3 = "";
+            $nilaiTugas4 = "";
+            $nilaiTugas5 = "";
+            $nilaiUTS1 = "";
+            $nilaiUTS2 = "";
+            $nilaiUTS3 = "";
+            $nilaiUTS4 = "";
+            $nilaiUTS5 = "";
+            $nilaiUAS1 = "";
+            $nilaiUAS2 = "";
+            $nilaiUAS3 = "";
+            $nilaiUAS4 = "";
+            $nilaiUAS5 = "";
+        ?>
+        <p><strong>Nama Matkul:</strong></p>
+        <p><strong>SKS Matkul:</strong></p>
+        <p><strong>Nilai Tugas:</strong></p>
+        <p><strong>Nilai UTS:</strong></p>
+        <p><strong>Nilai UAS:</strong></p>
+    </section>
  </main>
 
  <footer>
