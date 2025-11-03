@@ -251,12 +251,30 @@
             $nilaiUAS5 = "";
         ?>
         <p><strong>Nama Matkul:</strong>
-
+        <?php
+        echo $namaMatkul1
+        ?>
         </p>
-        <p><strong>SKS Matkul:</strong></p>
-        <p><strong>Nilai Tugas:</strong></p>
-        <p><strong>Nilai UTS:</strong></p>
-        <p><strong>Nilai UAS:</strong></p>
+        <p><strong>SKS Matkul:</strong>
+        <?php
+        echo $sksMatkul1
+        ?>
+        </p>
+        <p><strong>Nilai Tugas:</strong>
+        <?php
+        echo $nilaiTugas1
+        ?>
+        </p>
+        <p><strong>Nilai UTS:</strong>
+        <?php
+        echo $nilaiUTS1
+        ?>
+        </p>
+        <p><strong>Nilai UAS:</strong>
+        <?php
+        echo $nilaiUAS1
+        ?>
+        </p>
     </section>
  </main>
 
