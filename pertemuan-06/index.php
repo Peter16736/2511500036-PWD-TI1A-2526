@@ -106,7 +106,6 @@
             }
 
             #about strong,
-            #IPK strong,
             #contact label>span {
                 text-align: left;
                 padding-right: 0;
