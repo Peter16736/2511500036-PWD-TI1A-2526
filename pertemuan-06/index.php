@@ -144,7 +144,15 @@
      <?php
         $nim = 2511500036;
         $NIM = 2511500000;
-        $nama = 'bo\'he';
+        $nama = "Peter Imanuel";
+        $Tempatlahir = "Pangkal pinang";
+        $Tanggallahir = "16 Juli 2007";
+        $Hobi = "Basket";
+        $Pasangan = "Belum ada";
+        $Pekerjaan = "Tidak ada";
+        $Ortuteman = "Bapak Rokrok dan FonFon";
+        $Namakakak1 = "Christine";
+        $Namakakak2 = "Sherly";
      ?>
      <h2>Tentang saya</h2>
      <p><strong>NIM:</strong>
@@ -157,14 +165,40 @@
      echo $nama;
      ?>
      &#9786;</p>
-     <p><strong>Tempat Lahir:</strong>Pangkal Pinang</p>
-     <p><strong>Tanggal Lahir:</strong>16 Juli 2007</p>
-     <p><strong>Hobi:</strong>Basket&#9786;</p>
-     <p><strong>Pasangan&hearts;:</strong>Belum ada</p>
-     <p><strong>Pekerjaan:</strong>Tidak ada</p>
-     <p><strong>Nama Orang Tua Teman:</strong>Bapak Rokrok dan Fon</p>
-     <p><strong>Nama Kakak 1:</strong>Christine</p>
-     <p><strong>Nama Kakak 2:</strong>Sherly</p>
+     <p><strong>Tempat Lahir:</strong>
+     <?php
+     echo $Tempatlahir;
+     ?>
+     </p>
+     <p><strong>Tanggal Lahir:</strong>
+     <?php
+     echo $Tanggallahir
+     ?>
+     </p>
+     <p><strong>Hobi:</strong>
+     <?php
+     echo $Hobi
+     ?>
+     &#9786;</p>
+     <p><strong>Pasangan&hearts;:</strong>
+     <?php
+     echo $Pasangan
+     ?>
+     </p>
+     <p><strong>Pekerjaan:</strong>
+     <?php
+     echo $Pekerjaan
+     ?>
+     <p><strong>Nama Kakak 1:</strong>
+     <?php
+     echo $Namakakak1
+     ?>
+     </p>
+     <p><strong>Nama Kakak 2:</strong>
+     <?php
+     echo $Namakakak2
+     ?>
+     </p>
     </section>
     <section id="contact">
      <h2>&deg; Kontak kami &deg;</h2>
