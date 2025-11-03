@@ -222,7 +222,7 @@
     </section>
 
     <section id="IPK">
-        <h2>IPK</h2>
+        <h2>Nilai Saya</h2>
         <?php
             $namaMatkul1 = "Kalkulus";
             $namaMatkul2 = "Logika Infomatika";
