@@ -9,7 +9,8 @@
 
     <style>
         #about, 
-        #contact {
+        #contact,
+        #IPK {
             background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
@@ -19,7 +20,8 @@
         }
         
         #about h2,
-        #contact h2 {
+        #contact h2
+        #IPK h2 {
             color: #003366;
             border-bottom: 2px solid #003366;
             padding-bottom: 6px;
