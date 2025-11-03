@@ -30,6 +30,7 @@
         }
 
         #about p,
+        #IPK p,
         #contact label {
             display: flex;
             justify-content: flex-start;
@@ -40,6 +41,7 @@
         }
 
         #about strong,
+        #IPK strong,
         #contact label>span {
             min-width: 180px;
             color: #003366;
@@ -97,12 +99,14 @@
 
         @media (max-width: 600px){
             #about p,
+            #IPK p,
             #contact label {
                 flex-direction: column;
                 align-items: flex-start;
             }
 
             #about strong,
+            #IPK strong,
             #contact label>span {
                 text-align: left;
                 padding-right: 0;
