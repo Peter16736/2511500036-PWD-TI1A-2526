@@ -99,7 +99,6 @@
 
         @media (max-width: 600px){
             #about p,
-            #IPK p,
             #contact label {
                 flex-direction: column;
                 align-items: flex-start;
