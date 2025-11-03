@@ -30,7 +30,6 @@
         }
 
         #about p,
-        #IPK p,
         #contact label {
             display: flex;
             justify-content: flex-start;
