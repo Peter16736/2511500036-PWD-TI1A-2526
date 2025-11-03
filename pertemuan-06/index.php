@@ -220,6 +220,7 @@
     </section>
 
     <section id="IPK">
+        <h2>IPK</h2>
         <?php
             $namaMatkul1 = "Kalkulus";
             $namaMatkul2 = "Logika Infomatika";
@@ -247,7 +248,9 @@
             $nilaiUAS4 = "";
             $nilaiUAS5 = "";
         ?>
-        <p><strong>Nama Matkul:</strong></p>
+        <p><strong>Nama Matkul:</strong>
+
+        </p>
         <p><strong>SKS Matkul:</strong></p>
         <p><strong>Nilai Tugas:</strong></p>
         <p><strong>Nilai UTS:</strong></p>
