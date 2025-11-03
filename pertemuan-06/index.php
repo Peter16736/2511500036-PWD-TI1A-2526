@@ -9,8 +9,7 @@
 
     <style>
         #about, 
-        #contact,
-        #IPK {
+        #contact {
             background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
@@ -20,8 +19,7 @@
         }
         
         #about h2,
-        #contact h2
-        #IPK h2 {
+        #contact h2 {
             color: #003366;
             border-bottom: 2px solid #003366;
             padding-bottom: 6px;
@@ -30,7 +28,6 @@
         }
 
         #about p,
-        #IPK p,
         #contact label {
             display: flex;
             justify-content: flex-start;
@@ -41,7 +38,6 @@
         }
 
         #about strong,
-        #IPK strong,
         #contact label>span {
             min-width: 180px;
             color: #003366;
@@ -99,14 +95,12 @@
 
         @media (max-width: 600px){
             #about p,
-            #IPK p,
             #contact label {
                 flex-direction: column;
                 align-items: flex-start;
             }
 
             #about strong,
-            #IPK strong,
             #contact label>span {
                 text-align: left;
                 padding-right: 0;
