@@ -41,7 +41,6 @@
         }
 
         #about strong,
-        #IPK strong,
         #contact label>span {
             min-width: 180px;
             color: #003366;
