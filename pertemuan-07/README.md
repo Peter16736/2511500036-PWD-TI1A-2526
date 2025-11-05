@@ -10,7 +10,7 @@ Hari ini, Rabu 15 Oktober,2025 saya mempelajari:
  <li>isi git_proses.php</li>
  <li>session di get_proses.php</li>
  <li>menampilkan session dari get_proses.php ke get.php</li>
- <li></li>
+ <li>redirect dari get_proses.php ke get.php</li>
  <li></li>
  <li></li>
 
