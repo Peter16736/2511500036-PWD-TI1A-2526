@@ -1,3 +1,7 @@
+<?php
+  echo $_GET["txtNama"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,7 +67,7 @@
 
     <section id="contact">
       <h2>Kontak Kami</h2>
-      <form action="" method="GET">
+      <form action="get_proses.php" method="GET">
 
         <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
