@@ -7,7 +7,7 @@ Hari ini, Rabu 15 Oktober,2025 saya mempelajari:
 <ol>
  <li>copy seluruh file dari elearning (punya dosen) untuk latihan pertemeuan-07</li>
  <li>copy dan rename index.php menjadi get.php, kemudian membuat file get_proses.php untuk action</li>
- <li></li>
+ <li>isi git_proses.php</li>
  <li></li>
  <li></li>
 
