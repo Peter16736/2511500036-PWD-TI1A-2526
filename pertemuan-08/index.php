@@ -64,7 +64,7 @@ endif;
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
         </label>
 
-        <label for="txtTempatLahir"><span>Tempat Lahir:</span>
+        <label for="txtTempatLahir"><span>Tanggal Lahir:</span>
           <input type="Tempat Lahir" id="txtTanggalLahir" name="txtTanggalLahir" placeholder="Masukkan Tanggal Lahir" required autocomplete="Tanggal Lahir">
         </label>
 
