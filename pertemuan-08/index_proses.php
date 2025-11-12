@@ -1,12 +1,12 @@
 <?php
 session_start();
+$sesnim = $_POST["txtNIM"];
 $sesnama = $_POST["txtNama"];
-$sesemail = $_POST["txtEmail"];
-$sespesan = $_POST["txtPesan"];
+$sestanggallahir = $_POST["txtTanggalLahir"];
 $seshobi = $_POST["txtHobi"];
+$_SESSION["sesnim"] = $sesnim;
 $_SESSION["sesnama"] = $sesnama;
-$_SESSION["sesemail"] = $sesemail;
-$_SESSION["sespesan"] = $sespesan;
+$_SESSION["sestanggallahir"] = $sestanggallahir;
 $_SESSION["seshobi"] = $seshobi;
 header("location: index.php");
 ?>

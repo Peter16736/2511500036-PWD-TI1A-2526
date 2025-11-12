@@ -54,7 +54,7 @@ endif;
 
     <section id="PendaftaranProfilPengunjung">
       <h2>Pendaftaran Profil Pengunjung</h2>
-      <form action="proses.php" method="POST">
+      <form action="index_proses.php" method="POST">
 
         <label for="txtNIM"><span>NIM:</span>
           <input type="NIM" id="txtNIM" name="txtNIM" placeholder="Masukkan NIM" required autocomplete="NIM">
@@ -100,6 +100,7 @@ endif;
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
+
     </section>
 
     <section id="about">
@@ -113,22 +114,20 @@ endif;
       <h2>Tentang Saya</h2>
       <p><strong>NIM:</strong>
         <?php
-        echo $NIM;
         ?>
       </p>
       <p><strong>Nama Lengkap:</strong>
         <?php
-        echo $Nama;
-        ?> &#128526;
+        ?>
       </p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
+      <p><strong>Tempat Lahir:</strong> <?php ?></p>
+      <p><strong>Tanggal Lahir:</strong> </p>
+      <p><strong>Hobi:</strong> </p>
+      <p><strong>Pasangan:</strong> </p>
+      <p><strong>Pekerjaan:</strong> </p>
+      <p><strong>Nama Orang Tua:</strong> </p>
+      <p><strong>Nama Kakak:</strong> </p>
+      <p><strong>Nama Adik:</strong> <?php  ?></p>
     </section>
 
     <section id="contact">

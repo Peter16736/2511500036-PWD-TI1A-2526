@@ -11,6 +11,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>mendownload dan mengcopy file bahan ajar punya dosen dan mempastenya di pertemuan-08</li>
   <li>membuat input nim, nama, tanggal lahir, tempat lahir, hobi, pasangan, pekerjaan, nama orang tua, nama kakak, nama adik.</li>
   <li>selesai menstylingnya sama dengan section#contact</li>
-  <li></li>
+  <li>membuat file baru index_proses.php</li>
   <li></li>
 </ol>
