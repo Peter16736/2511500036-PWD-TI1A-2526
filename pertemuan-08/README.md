@@ -10,7 +10,7 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>mendownload dan mengcopy file bahan ajar punya dosen dan mempastenya di pertemuan-08</li>
   <li>membuat input nim, nama, tanggal lahir, tempat lahir, hobi, pasangan, pekerjaan, nama orang tua, nama kakak, nama adik.</li>
-  <li></li>
+  <li>selesai menstylingnya sama dengan section#contact</li>
   <li></li>
   <li></li>
 </ol>
