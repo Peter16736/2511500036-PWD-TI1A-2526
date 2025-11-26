@@ -1,32 +1,39 @@
 <?php
-session_start();
-$sesnama = $_POST["txtNama"];
-$sesemail = $_POST["txtEmail"];
-$sespesan = $_POST["txtPesan"];
-$_SESSION["sesnama"] = $sesnama;
-$_SESSION["sesemail"] = $sesemail;
-$_SESSION["sespesan"] = $sespesan;
+    session_start();
+    $sesnama = $_POST["txtNama"];
+    $sesemail = $_POST["txtEmail"];
+    $sespesan = $_POST["txtPesan"];
+    $_SESSION["sesnama"] = $sesnama;
+    $_SESSION["sesemail"] = $sesemail;
+    $_SESSION["sespesan"] = $sespesan;
 
-$txtNim = $_POST["txtNim"];
-$txtNmLengkap = $_POST["txtNmLengkap"];
-$txtT4Lhr = $_POST["txtT4Lhr"];
-$txtTglLhr = $_POST["txtTglLhr"];
-$txtHobi = $_POST["txtHobi"];
-$txtPasangan = $_POST["txtPasangan"];
-$txtKerja = $_POST["txtKerja"];
-$txtNmOrtu = $_POST["txtNmOrtu"];
-$txtNmKakak = $_POST["txtNmKakak"];
-$txtNmAdik = $_POST["txtNmAdik"];
-
-$_SESSION["txtNim"] = $txtNim;
-$_SESSION["txtNmLengkap"] = $txtNmLengkap;
-$_SESSION["txtT4Lhr"] = $txtT4Lhr;
-$_SESSION["txtTglLhr"] = $txtTglLhr;
-$_SESSION["txtHobi"] = $txtHobi;
-$_SESSION["txtPasangan"] = $txtPasangan;
-$_SESSION["txtKerja"] = $txtKerja;
-$_SESSION["txtNmOrtu"] = $txtNmOrtu;
-$_SESSION["txtNmKakak"] = $txtNmKakak;
-$_SESSION["txtNmAdik"] = $txtNmAdik;
-header("location: index.php");
+  $arrBiodata = [
+    "nim" => $_POST["txtNim"] ?? "",
+    "nama" => $_POST["txtNmLengkap"] ?? "",
+    "tanggal" => $_POST["txtTglLhr"] ?? "",
+    "lahir" => $_POST["txtT4Lhr"] ?? "",
+    "hobi" => $_POST["txtHobi"] ?? "",
+    "pasangan" => $_POST["txtPasangan"] ?? "",
+    "kerja" => $_POST["txtKerja"] ?? "",
+    "ortu" => $_POST["txtNmOrtu"] ?? "",
+    "kakak" => $_POST["txtNmKakak"] ?? "",
+    "adik" => $_POST["txtNmAdik"] ?? "",
+  ];
+  
+    foreach ($dataBiodata as $k => $v) {
+      echo "<p><strong>$k</strong>: $v</p>";
+    }
+    $_SESSION["txtNim"] = $txtNim;
+    $_SESSION["txtNmLengkap"] = $txtNmLengkap;
+    $_SESSION["txtT4Lhr"] = $txtT4Lhr;
+    $_SESSION["txtTglLhr"] = $txtTglLhr;
+    $_SESSION["txtHobi"] = $txtHobi;
+    $_SESSION["txtPasangan"] = $txtPasangan;
+    $_SESSION["txtKerja"] = $txtKerja;
+    $_SESSION["txtNmOrtu"] = $txtNmOrtu;
+    $_SESSION["txtNmKakak"] = $txtNmKakak;
+    $_SESSION["txtNmAdik"] = $txtNmAdik;
+    header("location: index.php");
+    $_SESSION["biodata"] = $arrBiodata;
+    header("location: index.php#contact");
 ?>
