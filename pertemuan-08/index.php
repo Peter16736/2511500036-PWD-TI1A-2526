@@ -1,21 +1,18 @@
 <?php
 session_start();
 
-$sesnama = "";
-if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
-endif;
+$sesnim = $_SESSION["sesnim"];
+$sesnama = $_SESSION["sesnama"];
+$sestanggallahir = $_SESSION["sestanggallahir"];
+$sestempatlahir = $_SESSION["sestempatlahir"];
+$seshobi = $_SESSION["seshobi"];
+$sespasangan = $_SESSION["sespasangan"];
+$sesnamaorangtua = $_SESSION["sespekerjaan"];
+$sesnamakakak = $_SESSION["sesnamakakak"];
+$sesnamaadik = $_SESSION["sesnamaadik"];
 
-$sesemail = "";
-if (isset($_SESSION["sesemail"])):
-  $sesemail = $_SESSION["sesemail"];
-endif;
-
-$sespesan = "";
-if (isset($_SESSION["sespesan"])):
-  $sespesan = $_SESSION["sespesan"];
-endif;
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +54,7 @@ endif;
       <form action="index_proses.php" method="POST">
 
         <label for="txtNIM"><span>NIM:</span>
-          <input type="NIM" id="txtNIM" name="txtNIM" placeholder="Masukkan NIM" required autocomplete="NIM">
+          <input type="text" id="txtNIM" name="txtNIM" placeholder="Masukkan NIM" required autocomplete="NIM">
         </label>
 
         <label for="txtNama"><span>Nama:</span>
@@ -65,7 +62,7 @@ endif;
         </label>
 
         <label for="txtTempatLahir"><span>Tanggal Lahir:</span>
-          <input type="Tempat Lahir" id="txtTanggalLahir" name="txtTanggalLahir" placeholder="Masukkan Tanggal Lahir" required autocomplete="Tanggal Lahir">
+          <input type="text" id="txtTanggalLahir" name="txtTanggalLahir" placeholder="Masukkan Tanggal Lahir" required autocomplete="Tanggal Lahir">
         </label>
 
         <label for="txtTempatLahir"><span>Tempat Lahir:</span>
@@ -152,13 +149,13 @@ endif;
         <button type="reset">Batal</button>
       </form>
 
-      <?php if (!empty($sesnama)): ?>
+    
         <br><hr>
         <h2>Yang menghubungi kami</h2>
         <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
         <p><strong>Email :</strong> <?php echo $sesemail ?></p>
         <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
-      <?php endif; ?>
+ 
 
 
 

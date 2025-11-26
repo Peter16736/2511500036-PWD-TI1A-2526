@@ -1,12 +1,14 @@
 <?php
 session_start();
-$sesnim = $_POST["txtNIM"];
-$sesnama = $_POST["txtNama"];
-$sestanggallahir = $_POST["txtTanggalLahir"];
-$seshobi = $_POST["txtHobi"];
-$_SESSION["sesnim"] = $sesnim;
-$_SESSION["sesnama"] = $sesnama;
-$_SESSION["sestanggallahir"] = $sestanggallahir;
-$_SESSION["seshobi"] = $seshobi;
+
+$_SESSION["sesnim"] = $_POST["txtNIM"];
+$_SESSION["sesnama"] = $_POST["txtnama"];
+$_SESSION["sestanggallahir"] = $_POST["txttanggallahir"];
+$_SESSION["seshobi"] = $_POST["txthobi"];
+$_SESSION["sespasangan"] = $_POST["txtpasangan"];
+$_SESSION["sespekerjaan"] = $_POST["txtpekerjaan"];
+$_SESSION["sesnamaorangtua"] = $_POST["txtnamaorangtua"];
+$_SESSION["sesnamakakak"] = $_POST["txtnamakakak"];
+$_SESSION["sesnamaadik"] = $_POST["txtnamaadik"]
 header("location: index.php");
 ?>

@@ -3,10 +3,8 @@ session_start();
 $sesnama = $_POST["txtNama"];
 $sesemail = $_POST["txtEmail"];
 $sespesan = $_POST["txtPesan"];
-$seshobi = $_POST["txtHobi"];
 $_SESSION["sesnama"] = $sesnama;
 $_SESSION["sesemail"] = $sesemail;
 $_SESSION["sespesan"] = $sespesan;
-$_SESSION["seshobi"] = $seshobi;
 header("location: index.php");
 ?>
