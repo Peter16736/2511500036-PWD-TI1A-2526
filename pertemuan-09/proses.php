@@ -11,7 +11,7 @@
     "nim" => $_POST["txtNim"] ?? "",
     "nama" => $_POST["txtNmLengkap"] ?? "",
     "tanggal" => $_POST["txtTglLhr"] ?? "",
-    "lahir" => $_POST["txtT4Lhr"] ?? "",
+    "tempat" => $_POST["txtT4Lhr"] ?? "",
     "hobi" => $_POST["txtHobi"] ?? "",
     "pasangan" => $_POST["txtPasangan"] ?? "",
     "kerja" => $_POST["txtKerja"] ?? "",
@@ -19,21 +19,9 @@
     "kakak" => $_POST["txtNmKakak"] ?? "",
     "adik" => $_POST["txtNmAdik"] ?? "",
   ];
+
   
-    foreach ($dataBiodata as $k => $v) {
-      echo "<p><strong>$k</strong>: $v</p>";
-    }
-    $_SESSION["txtNim"] = $txtNim;
-    $_SESSION["txtNmLengkap"] = $txtNmLengkap;
-    $_SESSION["txtT4Lhr"] = $txtT4Lhr;
-    $_SESSION["txtTglLhr"] = $txtTglLhr;
-    $_SESSION["txtHobi"] = $txtHobi;
-    $_SESSION["txtPasangan"] = $txtPasangan;
-    $_SESSION["txtKerja"] = $txtKerja;
-    $_SESSION["txtNmOrtu"] = $txtNmOrtu;
-    $_SESSION["txtNmKakak"] = $txtNmKakak;
-    $_SESSION["txtNmAdik"] = $txtNmAdik;
-    header("location: index.php");
+  
     $_SESSION["biodata"] = $arrBiodata;
     header("location: index.php#contact");
 ?>
