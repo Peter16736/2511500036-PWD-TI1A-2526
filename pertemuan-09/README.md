@@ -13,6 +13,9 @@
   <li>mengcopy file punya dosen dan mempaste di folder pertemuan-09</li>
   <li>mengubah Data POST ke Array Associative di proses.php</li>
   <li>mengganti kode baris 23-32 di file proses.php</li>
+  <li>mengubah kode baris 19-67 di index.php</li>
+  <li></li>
+  <li></li>
   <li></li>
 
 
