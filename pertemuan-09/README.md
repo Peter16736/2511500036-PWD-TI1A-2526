@@ -20,8 +20,8 @@
   <li>menambahkan kode baru untuk merender hasil atau output biodata</li>
   <li>mengubah kode baris 123-129 di index.php</li>
   <li>menambahkan ikutkan file fungsi.php dengan kode require_once di index.php</li>
-  <li></li>
-  <li></li>
+  <li>mengubah Data POST ke Array Associative punya kontak di proses.php</li>
+  <li>menambahkan section baru di index.php</li>
   <li></li>
   <li></li>
 
