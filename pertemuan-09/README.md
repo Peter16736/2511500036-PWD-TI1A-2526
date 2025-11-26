@@ -22,6 +22,10 @@
   <li>menambahkan ikutkan file fungsi.php dengan kode require_once di index.php</li>
   <li>mengubah Data POST ke Array Associative punya kontak di proses.php</li>
   <li>menambahkan section baru di index.php</li>
+  <li>selesai menstyling section baru</li>
+  <li>menambahka file baru</li>
+  <li></li>
+  <li></li>
   <li></li>
   <li></li>
 

@@ -2,7 +2,12 @@
 
 require_once __DIR__ . '/fungsi.php';
 
-
+$kontak = $_SESSION["kontak"]?? [];
+$fieldCnfg = [
+  "nama" => ["label" => "Nama:", "suffix" => ""],
+  "email" => ["label" => "Email:", "suffix" => ""],
+  "pesan" => ["label" => "Pesan Anda:", "suffix" => ""],
+]
 
 $biodata = $_SESSION["biodata"]?? [];
 
