@@ -24,7 +24,7 @@
   <li>menambahkan section baru di index.php</li>
   <li>selesai menstyling section baru</li>
   <li>mencopy file fungsi.php dan mempaste di pertemuan-09</li>
-  <li></li>
+  <li>menambahkan ikutkan file fungsi.php1 dengan kode require_once di index.php</li>
   <li></li>
   <li></li>
   <li></li>

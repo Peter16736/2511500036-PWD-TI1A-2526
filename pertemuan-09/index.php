@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/fungsi.php';
+require_once __DIR__ . '/fungsi.php1';
 
 $kontak = $_SESSION["kontak"]?? [];
 $fieldCnfg = [
@@ -8,6 +8,8 @@ $fieldCnfg = [
   "email" => ["label" => "Email:", "suffix" => ""],
   "pesan" => ["label" => "Pesan Anda:", "suffix" => ""],
 ]
+
+require_once __DIR__ . '/fungsi.php';
 
 $biodata = $_SESSION["biodata"]?? [];
 
@@ -140,7 +142,7 @@ $fieldConfig = [
 
     <section id="kontak">
       <h2>Kontak</h2>
-      
+      <?= tampilkanKontak($fieldCnfg, $kontak) ?>
     </section>
   </main>
 
