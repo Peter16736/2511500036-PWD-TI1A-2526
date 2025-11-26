@@ -24,7 +24,7 @@ $fieldConfig = [
   "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
   "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
   "hobi" => ["label" => "Hobi:", "suffix" => ""],
-  "pasangan" => ["label" => "Pasangan:", "suffix" => "&hearts"],
+  "pasangan" => ["label" => "Pasangan:", "suffix" => "&hearts;"],
   "kerja" => ["label" => "Pekerjaan:", "suffix" => ""],
   "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
   "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
