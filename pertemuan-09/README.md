@@ -10,5 +10,10 @@
   <li>tangkap session dari file proses</li>
   <li>tangkap session dari file proses selesai</li>
   <li>echo session ke nilai label section contact</li>
-  <li>echo session ke nilai label section contact selesai</li>
+  <li>mengcopy file punya dosen dan mempaste di folder pertemuan-09</li>
+  <li>mengubah Data POST ke Array Associative di proses.php</li>
+  <li>mengganti kode baris 23-32 di file proses.php</li>
+  <li></li>
+
+
 </ol>
