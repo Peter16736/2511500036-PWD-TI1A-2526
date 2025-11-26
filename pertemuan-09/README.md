@@ -16,7 +16,7 @@
   <li>mengubah kode baris 19-67 di index.php</li>
   <li>menampilkan array menggunakan looping foreach di section#about</li>
   <li>menambahkan file baru fungsi.php</li>
-  <li>menambahkan kode baru di fungsi.php</li>
+  <li>menambahkan kode baru untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan, dan 4 digit tahun. di fungsi.php</li>
   <li></li>
   <li></li>
   <li></li>
