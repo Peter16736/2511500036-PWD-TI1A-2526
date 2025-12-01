@@ -1,4 +1,6 @@
 # pertemuan-09
+NIM:2511500036<br>
+Nama:Peter Imanuel
 
 <ol>
   <li>Hasil UTS untuk bahan pertemuan-09</li>
@@ -19,13 +21,6 @@
   <li>menambahkan kode baru untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan, dan 4 digit tahun. di fungsi.php</li>
   <li>menambahkan kode baru untuk merender hasil atau output biodata</li>
   <li>mengubah kode baris 123-129 di index.php</li>
-  <li>menambahkan ikutkan file fungsi.php dengan kode require_once di index.php</li>
-  <li>mengubah Data POST ke Array Associative punya kontak di proses.php</li>
-  <li>menambahkan section baru di index.php</li>
-  <li>selesai menstyling section baru</li>
-  <li>mencopy file fungsi.php dan mempaste di pertemuan-09</li>
-  <li>menambahkan ikutkan file fungsi.php1 dengan kode require_once di index.php</li>
-  <li></li>
   <li></li>
   <li></li>
 

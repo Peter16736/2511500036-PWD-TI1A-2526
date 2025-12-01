@@ -52,7 +52,6 @@ header li a:active {
 #home:target~header nav a[href="#home"],
 #about:target~header nav a[href="#about"],
 #contact:target~header nav a[href="#contact"],
-#kontak:target~header nav a[href="#kontak"],
 #biodata:target~header nav a[href="#biodata"] {
   background: #fff;
   color: #003366;
@@ -64,8 +63,8 @@ header li a:active {
 #home,
 #about,
 #contact,
-#biodata,
-#kontak {
+#kontak,
+#biodata {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -77,8 +76,8 @@ header li a:active {
 #home h2,
 #about h2,
 #contact h2,
-#biodata h2,
-#kontak h2 {
+#kontak h2,
+#biodata h2 {
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
@@ -92,8 +91,8 @@ header li a:active {
 
 #about p,
 #contact label,
-#biodata label,
-#kontak label {
+#kontak label,
+#biodata label {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -104,8 +103,8 @@ header li a:active {
 
 #about strong,
 #contact label>span,
-#biodata label>span,
-#kontak label>span {
+#kontak label>span,
+#biodata label>span {
   min-width: 180px;
   color: #003366;
   font-weight: 600;
@@ -116,8 +115,7 @@ header li a:active {
 
 #contact input,
 #contact textarea,
-#biodata input,
-#kontak input {
+#biodata input {
   flex: 1;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -234,16 +232,14 @@ footer {
 
   #about p,
   #contact label,
-  #biodata label,
-  #kontak label {
+  #biodata label {
     flex-direction: column;
     align-items: flex-start;
   }
 
   #about strong,
   #contact label>span,
-  #biodata label>span,
-  #kontak label>span {
+  #biodata label>span {
     text-align: left;
     padding-right: 0;
     margin-bottom: 2px;
