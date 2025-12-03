@@ -8,7 +8,7 @@ Nama:Peter Imanuel
   <li>membuat database baru di phpmyadmin</li>
   <li>membuat tbl_tamu di phpMyAdmin</li>
   <li>membuat file baru read.php dan mengisi kodenya</li>
-  <li></li>
+  <li>melakukan insert di tbl_tamu di phpMyAdmin</li>
   <li></li>
   <li></li>
   <li></li>
