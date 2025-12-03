@@ -5,7 +5,7 @@ Nama:Peter Imanuel
 <ol>
   <li>mengcopy file punya dosen dan mempaste di folder pertemuan-10</li>
   <li>menambahkan file baru koneksi.php dan mengisi kodenya</li>
-  <li></li>
+  <li>membuat database baru di phpmyadmin</li>
   <li></li>
   <li></li>
   <li></li>
