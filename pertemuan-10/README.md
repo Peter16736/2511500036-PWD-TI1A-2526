@@ -10,7 +10,7 @@ Nama:Peter Imanuel
   <li>membuat file baru read.php dan mengisi kodenya</li>
   <li>melakukan insert di tbl_tamu di phpMyAdmin</li>
   <li>selesai mengubah kode di read.php dan index.php</li>
-  <li></li>
+  <li>export database db_pwd2025</li>
   <li></li>
   <li></li>
   <li></li>
