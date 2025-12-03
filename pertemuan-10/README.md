@@ -9,7 +9,7 @@ Nama:Peter Imanuel
   <li>membuat tbl_tamu di phpMyAdmin</li>
   <li>membuat file baru read.php dan mengisi kodenya</li>
   <li>melakukan insert di tbl_tamu di phpMyAdmin</li>
-  <li></li>
+  <li>selesai mengubah kode di read.php dan index.php</li>
   <li></li>
   <li></li>
   <li></li>
