@@ -36,9 +36,16 @@
     <th>No</th>
     <th>Aksi</th>
     <th>ID</th>
-    <th>Nama</th>
-    <th>Email</th>
-    <th>Pesan</th>
+    <th>NIM</th>
+    <th>Nama Lengkap</th>
+    <th>Tempat Lahir</th>
+    <th>Tanggal Lahir</th>
+    <th>Hobi</th>
+    <th>Pasangan</th>
+    <th>Pekerjaan</th>
+    <th>Nama Orang Tua</th>
+    <th>Nama Kakak</th>
+    <th>Nama Adik</th>
     <th>Created At</th>
   </tr>
   <?php $i = 1; ?>

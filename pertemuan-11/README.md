@@ -18,7 +18,7 @@ Nama:Peter Imanuel
   <li>mengambil data post, trim dan htmlspesialchars</li>
   <li>membuat validasi tidak kosong</li>
   <li>membuat query insert dengan prepared statement</li>
-  <li>membuat captcha sederhana</li>
+  <li>buat captcha sederhana</li>
   <li></li>
   <li></li>
   <li></li>
