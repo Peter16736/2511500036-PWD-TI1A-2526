@@ -10,7 +10,7 @@ Nama:Peter Imanuel
   <li>menambah berhasil/gagal pesan</li>
   <li>mengedit validasi</li>
   <li>mengedit sanitasi</li>
-  <li></li>
+  <li>mengedit konsep prg</li>
   <li></li>
   <li></li>
   <li></li>
