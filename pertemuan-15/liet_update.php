@@ -6,7 +6,7 @@
   #cek method form, hanya izinkan POST
   if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
-    redirect_ke('ubah.php');
+    redirect_ke('liet.php');
   }
 
   #validasi cid wajib angka dan > 0
@@ -32,88 +32,48 @@
   $nmadk = bersihkan($_POST['txtNmAdikEd'] ?? '');
 
   #Validasi sederhana
-  $errors = []; #ini array untuk menampung semua error yang ada
+$errors = []; #ini array untuk menampung semua error yang ada
 
-  if ($nim === '') {
-    $errors[] = 'Nim wajib diisi.';
-  }
+if ($nim === '') {
+  $errors[] = 'Nim wajib diisi.';
+}
 
-  if ($nmlengkap] === '') {
-    $errors[] = 'Nama wajib diisi.';
-  }
+if ($nmlengkap === '') {
+  $errors[] = 'Nama wajib diisi.';
+}
 
-  if ($tmptlahir === '') {
-    $errors[] = 'Tempat Lahir wajib diisi.';
-  }
+if ($tmptlahir === '') {
+  $errors[] = 'Tempat Lahir wajib diisi.';
+}
 
-  if ($tgllahir === '') {
-    $errors[] = 'Tanggal lahir wajib diisi.';
-  }
+if ($tgllahir === '') {
+  $errors[] = 'Tanggal Lahir wajib diisi.';
+}
 
-  if ($hobi === '') {
-    $errors[] = 'Hobi wajib diisi.';
-  }
+if ($hobi === '') {
+  $errors[] = 'Hobi wajib diisi.';
+}
 
-  if ($pasangan === '') {
-    $errors[] = 'Pasangan wajib diisi.';
-  }
+if ($pasangan === '') {
+  $errors[] = 'Pasangan wajib diisi.';
+}
 
-  if ($pekerjaan === '') {
-    $errors[] = 'Pekerjaan wajib diisi.';
-  }
+if ($pekerjaan] === '') {
+  $errors[] = 'Pekerjaan wajib diisi.';
+}
 
-  if ($nmortu === '') {
-    $errors[] = 'Nama Orang Tua wajib diisi.';
-  }
+if ($nmortu === '') {
+  $errors[] = 'Nama Orang Tua wajib diisi.';
+}
 
-  if ($nmkk === '') {
-    $errors[] = 'Nama Kakak wajib diisi.';
-  }
+if ($nmkk === '') {
+  $errors[] = 'Nama Kakak wajib diisi.';
+}
+
+if ($nmadk === '') {
+  $errors[] = 'Nama Adik wajib diisi.';
+}
   
-  if ($nmadk === '') {
-    $errors[] = 'Nama Adik wajib diisi.';
-  }
-
-  if (mb_strlen($nim) < 10) {
-    $errors[] = 'Nim minimal 10 karakter.';
-  }
-
-  if (mb_strlen($nmlengkap) < 3) {
-    $errors[] = 'Nama minimal 3 karakter.';
-  }
-
-  if (mb_strlen($tmptlahir) < 5) {
-    $errors[] = 'Tempat Lahir minimal 5 karakter.';
-  }
-
-  if (mb_strlen($tgllahir) < 3) {
-    $errors[] = 'Tanggal Lahir minimal 3 karakter.';
-  }
-
-  if (mb_strlen($hobi) < 3) {
-    $errors[] = 'Hobi minimal 3 karakter.';
-  }
-
-  if (mb_strlen($pasangan) < 3) {
-    $errors[] = 'Pasangan minimal 3 karakter.';
-  }
-
-  if (mb_strlen($pekerjaan) < 3) {
-    $errors[] = 'Pekerjaan minimal 3 karakter.';
-  }
-
-  if (mb_strlen($nmortu) < 3) {
-    $errors[] = 'Nama Orang Tua minimal 3 karakter.';
-  }
-
-  if (mb_strlen($nmkk) < 3) {
-    $errors[] = 'Nama Kakak minimal 3 karakter.';
-  }
-
-  if (mb_strlen($nmadk) < 3) {
-    $errors[] = 'Nama Adik minimal 3 karakter.';
-  }
-
   /*
   kondisi di bawah ini hanya dikerjakan jika ada error, 
   simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
