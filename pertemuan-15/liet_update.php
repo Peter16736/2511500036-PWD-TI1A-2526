@@ -5,7 +5,7 @@
 
   #cek method form, hanya izinkan POST
   if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    $_SESSION['flash_error'] = 'Akses tidak valid.';
+    $_SESSION['flash_error_biodata'] = 'Akses tidak valid.';
     redirect_ke('liet.php');
   }
 
@@ -15,7 +15,7 @@
   ]);
 
   if (!$cid) {
-    $_SESSION['flash_error'] = 'CID Tidak Valid.';
+    $_SESSION['flash_error_biodata'] = 'CID Tidak Valid.';
     redirect_ke('ubah.php?cid='. (int)$cid);
   }
 
@@ -92,7 +92,7 @@ if ($nmadk === '') {
       'nmadk' => $nmadk
     ];
 
-    $_SESSION['flash_error'] = implode('<br>', $errors);
+    $_SESSION['flash_error_biodata'] = implode('<br>', $errors);
     redirect_ke('ubah.php?cid='. (int)$cid);
   }
 
@@ -106,7 +106,7 @@ if ($nmadk === '') {
                                 WHERE cid = ?");
   if (!$stmt) {
     #jika gagal prepare, kirim pesan error (tanpa detail sensitif)
-    $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
+    $_SESSION['flash_error_biodata'] = 'Terjadi kesalahan sistem (prepare gagal).';
     redirect_ke('ubah.php?cid='. (int)$cid);
   }
 
@@ -118,7 +118,7 @@ if ($nmadk === '') {
     /*
       Redirect balik ke ubah.php dan tampilkan info sukses.
     */
-    $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diperbaharui.';
+    $_SESSION['flash_sukses_biodata_biodata'] = 'Terima kasih, data Anda sudah diperbaharui.';
     redirect_ke('ubah.php'); #pola PRG: kembali ke data dan exit()
   } else { #jika gagal, simpan kembali old value dan tampilkan error umum
     $_SESSION['old'] = [
@@ -133,7 +133,7 @@ if ($nmadk === '') {
       'nmkk' => $nmkk,
       'nmadk' => $nmadk,
     ];
-    $_SESSION['flash_error'] = 'Data gagal diperbaharui. Silakan coba lagi.';
+    $_SESSION['flash_error_biodata'] = 'Data gagal diperbaharui. Silakan coba lagi.';
     redirect_ke('ubah.php?cid='. (int)$cid);
   }
   #tutup statement

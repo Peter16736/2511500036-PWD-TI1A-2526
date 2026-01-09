@@ -38,7 +38,7 @@
   $stmt = mysqli_prepare($conn, "SELECT cid, cnim, cnmlengkap, ctmptlahir, ctngllahir, chobi, cpasangan, cpekerjaan, cnmortu, cnmkk, cnmadk 
                                     FROM tbl_data WHERE cid = ? LIMIT 1");
   if (!$stmt) {
-    $_SESSION['flash_error'] = 'Query tidak benar.';
+    $_SESSION['flash_error_biodata'] = 'Query tidak benar.';
     redirect_ke('liet.php');
   }
 
@@ -49,7 +49,7 @@
   mysqli_stmt_close($stmt);
 
   if (!$row) {
-    $_SESSION['flash_error'] = 'Record tidak ditemukan.';
+    $_SESSION['flash_error_biodata'] = 'Record tidak ditemukan.';
     redirect_ke('liet.php');
   }
 
@@ -66,9 +66,9 @@
   $adik      = $row['cnmadk'] ?? '';
 
   #Ambil error dan nilai old input kalau ada
-  $flash_error = $_SESSION['flash_error'] ?? '';
+  $flash_error_biodata = $_SESSION['flash_error_biodata'] ?? '';
   $old = $_SESSION['old'] ?? [];
-  unset($_SESSION['flash_error'], $_SESSION['old']);
+  unset($_SESSION['flash_error_biodata'], $_SESSION['old']);
   if (!empty($old)) {
     $nim        = $old['nim'] ?? $nim;
     $nmlengkap  = $old['nmlengkap'] ?? $nmlengkap;
@@ -110,9 +110,9 @@
       <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
 
-      <?php if (!empty($flash_error)): ?>
+      <?php if (!empty($flash_error_biodata)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
-          <?= $flash_error; ?>
+          <?= $flash_error_biodata; ?>
         </div>
       <?php endif; ?>
       

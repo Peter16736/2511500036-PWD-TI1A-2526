@@ -9,7 +9,7 @@
   ]);
 
   if (!$cid) {
-    $_SESSION['flash_error'] = 'CID Tidak Valid.';
+    $_SESSION['flash_error_biodata'] = 'CID Tidak Valid.';
     redirect_ke('liet.php');
   }
 
@@ -22,7 +22,7 @@
                                 WHERE cid = ?");
   if (!$stmt) {
     #jika gagal prepare, kirim pesan error (tanpa detail sensitif)
-    $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
+    $_SESSION['flash_error_biodata'] = 'Terjadi kesalahan sistem (prepare gagal).';
     redirect_ke('liet.php');
   }
 
@@ -33,9 +33,9 @@
     /*
       Redirect balik ke read.php dan tampilkan info sukses.
     */
-    $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah dihapus.';
+    $_SESSION['flash_sukses_biodata'] = 'Terima kasih, data Anda sudah dihapus.';
   } else { #jika gagal, simpan kembali old value dan tampilkan error umum
-    $_SESSION['flash_error'] = 'Data gagal dihapus. Silakan coba lagi.';
+    $_SESSION['flash_error_biodata'] = 'Data gagal dihapus. Silakan coba lagi.';
   }
   #tutup statement
   mysqli_stmt_close($stmt);

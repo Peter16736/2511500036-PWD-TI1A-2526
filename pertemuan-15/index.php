@@ -40,15 +40,15 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
-      <?php if (!empty($flash_sukses)): ?>
+      <?php if (!empty($flash_sukses_biodata)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
-          <?= $flash_sukses; ?>
+          <?= $flash_sukses_biodata; ?>
         </div>
       <?php endif; ?>
 
-      <?php if (!empty($flash_error)): ?>
+      <?php if (!empty($flash_error_biodata_biodata)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
-          <?= $flash_error; ?>
+          <?= $flash_error_biodata_biodata; ?>
         </div>
       <?php endif; ?>
       
@@ -122,11 +122,11 @@ require_once __DIR__ . '/fungsi.php';
     </section>
 
     <?php
-    $flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
-    $flash_error  = $_SESSION['flash_error'] ?? ''; #jika ada error
-    $old          = $_SESSION['old'] ?? []; #untuk nilai lama form
+    $flash_sukses = $_SESSION['flash_sukses_biodata'] ?? ''; #jika query sukses
+    $flash_error_biodata  = $_SESSION['flash_error_biodata_biodata'] ?? ''; #jika ada error
+    $old          = $_SESSION['old_biodata'] ?? []; #untuk nilai lama form
 
-    unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']); #bersihkan 3 session ini
+    unset($_SESSION['flash_sukses_biodata'], $_SESSION['flash_error_biodata_biodata'], $_SESSION['old']); #bersihkan 3 session ini
     ?>
 
     <section id="contact">
@@ -144,7 +144,7 @@ require_once __DIR__ . '/fungsi.php';
         </div>
       <?php endif; ?>
 
-      <form action="proses.php" method="POST">
+      
 
         <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"
