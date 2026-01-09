@@ -116,7 +116,7 @@
         </div>
       <?php endif; ?>
       
-      <form action="proses.php" method="POST">
+      <form action="liet_proses.php" method="POST">
         <input type="text" name="cid" value="<?= (int)$cid; ?>">
 
         <label for="txtNim"><span>NIM:</span>
