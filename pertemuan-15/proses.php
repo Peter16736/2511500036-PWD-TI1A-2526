@@ -50,7 +50,7 @@ if ($pasangan === '') {
   $errors[] = 'Pasangan wajib diisi.';
 }
 
-if ($pekerjaan] === '') {
+if ($pekerjaan === '') {
   $errors[] = 'Pekerjaan wajib diisi.';
 }
 
