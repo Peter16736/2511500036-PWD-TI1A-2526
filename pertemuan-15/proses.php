@@ -64,56 +64,44 @@ if ($nmadk === '') {
   $errors[] = 'Nama Adik wajib diisi.';
 }
 
-if ($pesan === '') {
-  $errors[] = 'Pesan wajib diisi.';
+if (mb_strlen($nim) < 3) {
+  $errors[] = 'Nim minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
+if (mb_strlen($nmlengkap) < 3) {
   $errors[] = 'Nama minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($tmptlahir) < 3) {
+  $errors[] = 'Tempat Lahir minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($tgllahir) < 3) {
+  $errors[] = 'Tanggal lahir minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($hobi) < 3) {
+  $errors[] = 'Hobi minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($pasangan) < 3) {
+  $errors[] = 'Pasangan minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($pekerjaan) < 3) {
+  $errors[] = 'Pekerjaan minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($nmortu) < 3) {
+  $errors[] = 'Nama Orang Tua minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($nmkk) < 3) {
+  $errors[] = 'Nama Kakak minimal 3 karakter.';
 }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
-}
-
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
-}
-
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
-}
-
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if (mb_strlen($nmadk) < 3) {
+  $errors[] = 'Nama Adik minimal 3 karakter.';
 }
 
 /*
@@ -122,10 +110,16 @@ simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
 if (!empty($errors)) {
   $_SESSION['old'] = [
-    'nama'  => $nama,
-    'email' => $email,
-    'pesan' => $pesan,
-    'captcha' => $captcha,
+    'nim'  => $nim,
+    'nmlengkap' => $nmlengkap,
+    'tmptlahir' => $tmptlahir,
+    'tgllahir' => $tgllahir,
+    'tgllahir' => $hobi,
+    'tgllahir' => $pasangan,
+    'tgllahir' => $pekerjaan,
+    'tgllahir' => $nmortu,
+    'tgllahir' => $nmkk,
+    'tgllahir' => $nmadk
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
@@ -133,7 +127,7 @@ if (!empty($errors)) {
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
+$sql = "INSERT INTO tbl_data (cnama, cemail, cpesan) VALUES (?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
