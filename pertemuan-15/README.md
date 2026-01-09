@@ -8,7 +8,7 @@ Nama:Peter Imanuel
   <li>mengcopy read.php dan mengubah jadi liet.php, setelah itu mengedit kode</li>
   <li>mengcopy file dit.php dan meenubah jadi ubah.php</li>
   <li>menambah berhasil/gagal pesan</li>
-  <li></li>
+  <li>mengedit validasi</li>
   <li></li>
   <li></li>
 
