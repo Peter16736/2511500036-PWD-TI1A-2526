@@ -48,10 +48,6 @@ if ($pasangan === '') {
   $errors[] = 'Pasangan wajib diisi.';
 }
 
-if ($pekerjaan] === '') {
-  $errors[] = 'Pekerjaan wajib diisi.';
-}
-
 if ($nmortu === '') {
   $errors[] = 'Nama Orang Tua wajib diisi.';
 }
