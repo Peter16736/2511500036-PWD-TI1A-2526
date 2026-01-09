@@ -57,9 +57,16 @@
         <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="proses_delete.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
       </td>
       <td><?= $row['cid']; ?></td>
-      <td><?= htmlspecialchars($row['cnama']); ?></td>
-      <td><?= htmlspecialchars($row['cemail']); ?></td>
-      <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
+      <td><?= htmlspecialchars($row['cnim']); ?></td>
+      <td><?= htmlspecialchars($row['cnmlengkap']); ?></td>
+      <td><?= htmlspecialchars($row['ctmptlahir']); ?></td>
+      <td><?= htmlspecialchars($row['ctgllahir']); ?></td>
+      <td><?= htmlspecialchars($row['chobi']); ?></td>
+      <td><?= htmlspecialchars($row['cpasangan']); ?></td>
+      <td><?= htmlspecialchars($row['cpekerjaan']); ?></td>
+      <td><?= htmlspecialchars($row['cnmortu']); ?></td>
+      <td><?= htmlspecialchars($row['cnmkk']); ?></td>
+      <td><?= htmlspecialchars($row['cnmadk']); ?></td>
       <td><?= formatTanggal(htmlspecialchars($row['dcreated_at'])); ?></td>
     </tr>
   <?php endwhile; ?>
