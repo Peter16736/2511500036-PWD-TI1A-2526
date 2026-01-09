@@ -52,7 +52,7 @@ require_once __DIR__ . '/fungsi.php';
         </div>
       <?php endif; ?>
       
-      <form action="proses.php" method="POST">
+      <form action="liet_proses.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required>
@@ -143,6 +143,8 @@ require_once __DIR__ . '/fungsi.php';
           <?= $flash_error; ?>
         </div>
       <?php endif; ?>
+
+      <form action="proses.php" method="POST">
 
         <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"
