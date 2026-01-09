@@ -9,6 +9,11 @@ Nama:Peter Imanuel
   <li>mengcopy file dit.php dan meenubah jadi ubah.php</li>
   <li>menambah berhasil/gagal pesan</li>
   <li>mengedit validasi</li>
+  <li>mengedit sanitasi</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
   <li></li>
   <li></li>
 
