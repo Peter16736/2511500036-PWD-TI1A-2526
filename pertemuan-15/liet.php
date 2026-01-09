@@ -57,16 +57,16 @@
         <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="liet_delete.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
       </td>
       <td><?= $row['cid']; ?></td>
-      <td><?= htmlspecialchars($row['cnim']); ?></td>
-      <td><?= htmlspecialchars($row['cnmlengkap']); ?></td>
-      <td><?= htmlspecialchars($row['ctmptlahir']); ?></td>
-      <td><?= htmlspecialchars($row['ctgllahir']); ?></td>
-      <td><?= htmlspecialchars($row['chobi']); ?></td>
-      <td><?= htmlspecialchars($row['cpasangan']); ?></td>
-      <td><?= htmlspecialchars($row['cpekerjaan']); ?></td>
-      <td><?= htmlspecialchars($row['cnmortu']); ?></td>
-      <td><?= htmlspecialchars($row['cnmkk']); ?></td>
-      <td><?= htmlspecialchars($row['cnmadk']); ?></td>
+      <td><?= htmlspecialchars($row['nim']); ?></td>
+      <td><?= htmlspecialchars($row['nmlengkap']); ?></td>
+      <td><?= htmlspecialchars($row['tmptlahir']); ?></td>
+      <td><?= htmlspecialchars($row['tgllahir']); ?></td>
+      <td><?= htmlspecialchars($row['hobi']); ?></td>
+      <td><?= htmlspecialchars($row['pasangan']); ?></td>
+      <td><?= htmlspecialchars($row['pekerjaan']); ?></td>
+      <td><?= htmlspecialchars($row['nmortu']); ?></td>
+      <td><?= htmlspecialchars($row['nmkk']); ?></td>
+      <td><?= htmlspecialchars($row['nmadk']); ?></td>
       <td><?= formatTanggal(htmlspecialchars($row['dcreated_at'])); ?></td>
     </tr>
   <?php endwhile; ?>
