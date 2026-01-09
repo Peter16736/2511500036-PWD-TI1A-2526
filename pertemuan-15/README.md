@@ -13,7 +13,7 @@ Nama:Peter Imanuel
   <li>mengedit konsep prg</li>
   <li>mengcopy file proses_update.php dan mengubahnya jadi liet_update.php, dan mengedit kodenya</li>
   <li>mengcopy file proses_delete.php dan mengubahnya jadi liet_delete.php, dan mengedit kodenya</li>
-  <li></li>
+  <li>mengcopy file proses.php dan mengubahnya jadi liet_proses.php dan mengedit kode</li>
   <li></li>
   <li></li>
 
