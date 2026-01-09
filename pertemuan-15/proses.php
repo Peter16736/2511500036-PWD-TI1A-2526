@@ -95,7 +95,7 @@ $stmt = mysqli_prepare($conn, $sql);
 if (!$stmt) {
   #jika gagal prepare, kirim pesan error ke pengguna (tanpa detail sensitif)
   $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
-  redirect_ke('liet_update.php');
+  redirect_ke('index.php#biodata');
 }
 #bind parameter dan eksekusi (s = string)
 mysqli_stmt_bind_param($stmt, "ssssssssss", $nim, $nmlengkap, $tmptlahir, $tgllahir, $hobi, $pasangan, $pekerjaan, $nmortu, $nmkk, $nmadk);
