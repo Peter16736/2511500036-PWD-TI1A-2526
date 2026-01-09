@@ -6,6 +6,8 @@ Nama:Peter Imanuel
   <li>mengcopy file milik dosen dan mempaste di pertemuan-15</li>
   <li>membuat tabel</li>
   <li>mengcopy read.php dan mengubah jadi liet.php, setelah itu mengedit kode</li>
+  <li>mengcopy file dit.php dan meenubah jadi ubah.php</li>
+  <li></li>
   <li></li>
   <li></li>
   <li></li>
