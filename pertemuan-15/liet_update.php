@@ -120,9 +120,16 @@
   */
   if (!empty($errors)) {
     $_SESSION['old'] = [
-      'nama'  => $nama,
-      'email' => $email,
-      'pesan' => $pesan
+      'nim'  => $nim,
+      'nmlengkap' => $nmlengkap,
+      'tmptlahir' => $tmptlahir,
+      'tgllahir' => $tgllahir,
+      'hobi' => $hobi,
+      'pasangan' => $pasangan,
+      'pekerjaan' => $pekerjaan,
+      'nmortu' => $nmortu,
+      'nmkk' => $nmkk,
+      'nmadk' => $nmadk
     ];
 
     $_SESSION['flash_error'] = implode('<br>', $errors);
@@ -134,8 +141,8 @@
     menyiapkan query UPDATE dengan prepared statement 
     (WAJIB WHERE cid = ?)
   */
-  $stmt = mysqli_prepare($conn, "UPDATE tbl_tamu 
-                                SET cnama = ?, cemail = ?, cpesan = ? 
+  $stmt = mysqli_prepare($conn, "UPDATE tbl_data 
+                                SET cid = ?, cnim = ?, cnmlengkap = ?, ctmptlahir = ?, ctngllahir = ?, chobi = ?, cpasangan = ?, cpekerjaan = ?, cnmortu = ?, cnmkk = ?, cnmadk = ? 
                                 WHERE cid = ?");
   if (!$stmt) {
     #jika gagal prepare, kirim pesan error (tanpa detail sensitif)
@@ -144,7 +151,7 @@
   }
 
   #bind parameter dan eksekusi (s = string, i = integer)
-  mysqli_stmt_bind_param($stmt, "sssi", $nama, $email, $pesan, $cid);
+  mysqli_stmt_bind_param($stmt, "ssssssssssi", $nim, $nmlengkap, $tmptlahir, $tgllahir, $hobi, $pasangan, $pekerjaan, $nmortu, $nmkk, $nmadk $cid);
 
   if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value
     unset($_SESSION['old']);

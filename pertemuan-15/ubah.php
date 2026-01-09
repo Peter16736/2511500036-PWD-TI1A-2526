@@ -36,7 +36,7 @@
     jika ada kesalahan, tampilkan penanda error.
   */
   $stmt = mysqli_prepare($conn, "SELECT cid, cnim, cnmlengkap, ctmptlahir, ctngllahir, chobi, cpasangan, cpekerjaan, cnmortu, cnmkk, cnmadk 
-                                    FROM tbl_tamu WHERE cid = ? LIMIT 1");
+                                    FROM tbl_data WHERE cid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
     redirect_ke('liet.php');
