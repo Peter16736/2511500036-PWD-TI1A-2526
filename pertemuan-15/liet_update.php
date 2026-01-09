@@ -6,7 +6,7 @@
   #cek method form, hanya izinkan POST
   if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
-    redirect_ke('read.php');
+    redirect_ke('ubah.php');
   }
 
   #validasi cid wajib angka dan > 0
@@ -156,15 +156,22 @@
   if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value
     unset($_SESSION['old']);
     /*
-      Redirect balik ke read.php dan tampilkan info sukses.
+      Redirect balik ke ubah.php dan tampilkan info sukses.
     */
     $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diperbaharui.';
-    redirect_ke('read.php'); #pola PRG: kembali ke data dan exit()
+    redirect_ke('ubah.php'); #pola PRG: kembali ke data dan exit()
   } else { #jika gagal, simpan kembali old value dan tampilkan error umum
     $_SESSION['old'] = [
-      'nama'  => $nama,
-      'email' => $email,
-      'pesan' => $pesan,
+      'nim'  => $nim,
+      'nmlengkap' => $nmlengkap,
+      'tmptlahir' => $tmptlahir,
+      'tgllahir' => $tgllahir,
+      'hobi' => $hobi,
+      'pasangan' => $pasangan,
+      'pekerjaan' => $pekerjaan,
+      'nmortu' => $nmortu,
+      'nmkk' => $nmkk,
+      'nmadk' => $nmadk,
     ];
     $_SESSION['flash_error'] = 'Data gagal diperbaharui. Silakan coba lagi.';
     redirect_ke('ubah.php?cid='. (int)$cid);
