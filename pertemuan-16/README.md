@@ -8,5 +8,5 @@ Nama:Peter Imanuel
     <li>mengedit kode file proses.php</li> 
     <li>mengedit session di proses.php</li> 
     <li>mengedit kode file proses.php</li> 
-    <li>mengedit kode file proses.php</li> 
+    <li>mengedit query di file proses.php</li> 
 </ol>
