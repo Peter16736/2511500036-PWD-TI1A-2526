@@ -6,4 +6,7 @@ Nama:Peter Imanuel
     <li>mengcopy file dari bahan uas dan mempaste dipertemuan-16</li> 
     <li>mengedit kode di index.php</li> 
     <li>mengedit kode file proses.php</li> 
+    <li>mengedit session di proses.php</li> 
+    <li>mengedit kode file proses.php</li> 
+    <li>mengedit kode file proses.php</li> 
 </ol>
