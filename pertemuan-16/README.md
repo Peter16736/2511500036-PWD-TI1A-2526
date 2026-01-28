@@ -5,5 +5,5 @@ Nama:Peter Imanuel
 <ol>
     <li>mengcopy file dari bahan uas dan mempaste dipertemuan-16</li> 
     <li>mengedit kode di index.php</li> 
-    <li>mengcopy file dari bahan uas dan mempaste dipertemuan-16</li> 
+    <li>mengedit kode file proses.php</li> 
 </ol>

@@ -48,7 +48,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="biodata">
       <h2>Biodata Dosen</h2>
-      <form action="proses_bio.php" method="POST">
+      <form action="proses.php" method="POST">
 
         <?php if (!empty($flash_sukses_biodata)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
@@ -56,9 +56,9 @@ require_once __DIR__ . '/fungsi.php';
         </div>
       <?php endif; ?>
 
-      <?php if (!empty($flash_error)): ?>
+      <?php if (!empty($flash_error_biodata)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
-          <?= $flash_error; ?>
+          <?= $flash_error_biodata; ?>
         </div>
       <?php endif; ?>
 
