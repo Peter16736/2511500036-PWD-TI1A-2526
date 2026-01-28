@@ -38,9 +38,29 @@ require_once __DIR__ . '/fungsi.php';
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
+    <?php
+    $flash_sukses = $_SESSION['flash_sukses_biodata'] ?? ''; #jika query sukses
+    $flash_error  = $_SESSION['flash_error_biodata'] ?? ''; #jika ada error
+    $old          = $_SESSION['old'] ?? []; #untuk nilai lama form
+
+    unset($_SESSION['flash_sukses_biodata'], $_SESSION['flash_error_biodata'], $_SESSION['old']); #bersihkan 3 session ini
+    ?>
+
     <section id="biodata">
       <h2>Biodata Dosen</h2>
       <form action="proses_bio.php" method="POST">
+
+        <?php if (!empty($flash_sukses_biodata)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
+          <?= $flash_sukses_biodata; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($flash_error)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
+          <?= $flash_error; ?>
+        </div>
+      <?php endif; ?>
 
         <label for="txtKodeDos"><span>Kode Dosen:</span>
           <input type="text" id="txtKodeDos" name="txtKodeDos" placeholder="Masukkan Kode Dosen" required>
